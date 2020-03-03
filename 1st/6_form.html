@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <p>
+      form Tag <br />
+      action = 입력 데이터가 전송될 URL 지정 <br />
+      method = get/post 방식으로 입력 데이터의 전달 방식 지정
+    </p>
+    <form action="http://google.com" method="GET">
+      ID = <input type="text" name="id" value="1" /> <br />
+      userName = <input type="text name="username", value="Shark-Gill"> <br />
+      <input type="submit" value="Google" />
+    </form>
+    <!--Select-->
+    <p>
+      복수개의 리스트에서 복수개의 아이템을 사용할 때사용함 <br />
+      select = select form 생성 <br />
+      option = 옵션 생성 <br />
+      optgroup = 옵션을 그룹화
+    </p>
+    <select name="Food" size="10" multiple>
+      <optgroup lobel="Food">
+        <option value="coffee">coffee</option>
+        <option value="donuts">donuts</option>
+        <option value="apple">apple</option>
+      </optgroup>
+    </select>
+    <br />
+    <!---Textarea-->
+    <textarea name="description" cols="30" rows="10">써줘</textarea>
+    <!--button-->
+    <input type="button" value="눌러!" onclick="alert('잘했어!')" />
+    <!--Fieldset/Legned-->
+    <fieldset>
+      <legend>집가자이제</legend>
+      <input type="text" name="오키" value="오키" />
+      <input type="text" name="가자!" value="가자!" />
+      <input type="submit" value="Go Home!" />
+    </fieldset>
+  </body>
+</html>
